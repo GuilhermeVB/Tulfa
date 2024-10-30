@@ -1,0 +1,18 @@
+.caseStudies_container {
+    overflow-x: hidden;
+    background-color: $dark-color;
+    display: flex;
+    flex-flow: column;justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    height: 27.875rem;
+
+    .caseStudies_heading {
+        @include unique-style(600, 40px, 44px, $light-color)
+    }
+
+    .caseStudies_carousel {
+        display: flex;
+        gap: 1.25rem;
+    }
+}

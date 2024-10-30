@@ -1,0 +1,45 @@
+.info_container {
+    background-color: $tertiary-color;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    padding: 6.25rem 0 4rem;
+
+    .info_titleField {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: .625rem;
+
+        .info_titleField_heading {
+            @include unique-style(600, 40px, 44px, $light-color);
+        }
+
+        .info_titleField_paragraph {
+            @include unique-style(300, 16px, 23px, $light-color);
+        }
+    }
+
+    .info_display {
+        display: flex;
+        flex-flow: column;
+        gap: 1.875rem;
+
+        .info_display_selection {
+            display: flex;
+            justify-content: center;
+            gap: .625rem;
+        }
+
+        .info_display_grid {
+            display: flex;
+            justify-content: center;
+            flex-flow: wrap;
+            gap: 1.25rem;
+            padding: 0 4rem;
+        }
+    }
+
+}

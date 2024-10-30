@@ -1,0 +1,25 @@
+.button_container {
+    @include unique-style(500, 12px, 13.8px, $light-color);
+    @include upperCase();
+    padding: .625rem 1.25rem;
+    width: fit-content;
+    border: none;
+    border-radius: .3125rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.primary_button {
+    background-color: $primary-button-color;
+}
+
+.secondary_button {
+    background-color: $secondary-button-color;
+}
+
+.showcase_button {
+    background-color: $secondary-button-off-color;
+    border-radius: 1.25rem;
+}

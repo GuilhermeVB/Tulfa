@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@import './fontFace';
+@import './shared';
+
+@import '../components/button/Button.module';
+@import '../components/feature_grid/Feature.module';
+@import '../components/frame/Frame.module';
+@import '../components/highlights/Highlights.module';
+@import '../components/show_case/ShowCase.module';
+
+@import '../layout/banner/Banner.module';
+@import '../layout/case_studies/CaseStudies.module';
+@import '../layout/companies/Companies.module';
+@import '../layout/contact/Contact.module';
+@import '../layout/cta/CTA.module';
+@import '../layout/header/Header.module';
+@import '../layout/immersive/Immersive.module';
+@import '../layout/info/Info.module';
+@import '../layout/innovations/Innovations.module';
+@import '../layout/solutions/Solutions.module';
+
+body {
+    background-color: $light-color;
+}

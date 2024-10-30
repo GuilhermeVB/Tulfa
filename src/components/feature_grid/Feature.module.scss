@@ -1,0 +1,32 @@
+.feature {
+    display: flex;
+    flex-flow: wrap;
+    width: 22.0625rem;
+    gap: 2rem;
+
+    .feature_image {
+        flex: 2;
+        border-radius: 2.75rem;
+    }
+
+    .feature_description {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        gap: 1rem;
+
+        .feature_description_icon {
+            width: 5.3125rem;
+            height: 4.75rem;
+            border-radius: 50%;
+        }
+
+        .feature_description_heading {
+            width: 13.3125rem;
+
+            .feature_description_heading_phrase {
+                @include unique-style(600, 30px, 34px, $primary-color)
+            }
+        }
+    }
+}

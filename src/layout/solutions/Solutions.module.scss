@@ -1,0 +1,30 @@
+.solutions_container {
+    display: flex;
+    flex-flow: column;
+    gap:4.25rem;
+    padding: 6.3125rem 0 8.424375rem;
+
+    .solutions_titleField {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        .solutions_titleField_heading {
+            @include unique-style(600, 40px, 50px);
+            @include webkitTansparentText($tertiary-gradient-color);
+        }
+
+        .solutions_titleField_subtitle {
+            @include unique-style(600, 18px, 29.34px, $secondary-color);
+        }
+    }
+
+    .solutions_featureGrid {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 3rem 5.5rem;
+        padding: 0 4rem;
+    }
+}

@@ -1,0 +1,36 @@
+$primary-color: #302C8C;
+$secondary-color: #312C8D;
+$tertiary-color: #151568;
+$quaternary-color: #736DFA;
+$light-color: #FFFFFF;
+$dark-color: #0A0A37;
+
+$primary-button-color: #FF4729;
+$secondary-button-color: #736DF9;
+$secondary-button-off-color: #30288F;
+
+$primary-gradient-color: linear-gradient(90deg, rgba(169, 164, 243, 1) 0%, rgba(251, 251, 248, 1) 100%);
+$secondary-gradient-color: linear-gradient(270deg, rgba(162, 154, 255, 1) 0%, rgba(255, 198, 189, 1) 100%);
+$tertiary-gradient-color: linear-gradient(270deg, rgba(83, 69, 255, 1) 0%, rgba(255, 59, 27, 1) 100%);
+
+@mixin unique-style($weight, $fontSize, $lineHeight, $color: inherit, $letterSpacing: .8px) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin webkitTansparentText($color) {
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin upperCase() {
+    text-transform: uppercase;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+}

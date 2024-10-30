@@ -1,0 +1,29 @@
+.caseStudies_frame_container {
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+
+    .immersive_frame_card {
+        @include borderRadius(.6875rem);
+    }
+
+    .companies_frame_card {
+        @include borderRadius(.833125rem);
+    }
+
+    .showcase_frame_card,
+    .caseStudies_frame_card {
+        @include borderRadius(.9375rem);
+    }
+
+    .caseStudies_frame_card {
+        width: 22.8125rem;
+        height: 12.6875rem;
+    }
+
+     .caseStudies_frame_description {
+        @include unique-style(600,18px, 23px, $light-color);
+        text-align: center;
+        width: 21.9375rem;
+     }
+}

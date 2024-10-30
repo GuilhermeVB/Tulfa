@@ -1,0 +1,11 @@
+.cta_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15.25rem;
+
+    .cta_paragraph {
+        @include unique-style(300, 28px, 36px, $primary-color );
+        width: 48.9375rem;
+    }
+}

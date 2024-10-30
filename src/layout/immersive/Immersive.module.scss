@@ -1,0 +1,22 @@
+.immersive_container {
+    overflow-x: hidden;
+    background-color: $primary-color;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    top: 6.75rem;
+    gap: 3.90625rem;
+    padding: 6.75rem 0 10.25rem;
+
+    .immersive_heading {
+        @include unique-style(600, 40px, 45px);
+        @include webkitTansparentText($secondary-gradient-color);
+        width: 42.375rem;
+        text-align: center;
+    }
+
+    .immersive_productdisplays {
+        display: flex;
+        gap: .625rem;
+    }
+}

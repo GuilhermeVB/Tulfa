@@ -1,0 +1,19 @@
+.companies_container {
+    overflow-x: hidden;
+    background-color: $tertiary-color;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    height: 36.125rem;
+
+    .companies_heading {
+        @include unique-style(600, 40px, 44px, $light-color, 1px);
+    }
+
+    .companies_carousel {
+        display: flex;
+        gap: 2.5rem;
+    }
+}

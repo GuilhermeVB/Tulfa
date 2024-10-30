@@ -1,0 +1,37 @@
+.highlights_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+    height: 25rem;
+
+    &:nth-child(2n) {
+        flex-flow: row-reverse;
+    }
+
+    .highlights_description {
+        display: flex;
+        flex-flow: column;
+        gap: .75rem;
+        width: 29.875rem;
+
+        .highlights_description_type {
+            @include unique-style(600, 12px, 14.94px, $quaternary-color);
+        }
+
+        .highlights_description_heading {
+            @include unique-style(600, 24px, 32px, $light-color, 2px);
+        }
+
+        .highlights_description_paragraph {
+            @include unique-style(300, 16px, 23px, $light-color);
+        }
+    }
+
+    .highlights_video,
+    .highlights_figure {
+        width: 31.25rem;
+        height: 17.5rem;
+        border-radius: .625rem;
+    }
+}

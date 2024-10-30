@@ -1,0 +1,21 @@
+.banner_container {
+    position: relative;
+    height: 47.875rem;
+
+    .banner_video {
+        z-index: -1;
+        position: absolute;
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_span {
+        @include unique-style(300, 44px, 46px);
+        @include webkitTansparentText($primary-gradient-color);
+        position: absolute;
+        bottom: 4.25rem;
+        left: 4.25rem;
+        width: 26.8125rem;
+    }
+}

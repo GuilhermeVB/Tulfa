@@ -1,0 +1,14 @@
+.showcase_container {
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+    width: 22.8125rem;
+
+    .showcase_heading {
+        @include unique-style(600, 18px, 23px, $light-color);
+    }
+
+    .showcase_paragraph {
+        @include unique-style(300, 16px, 23px, $light-color);
+    }
+}
