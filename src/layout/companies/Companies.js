@@ -17,7 +17,7 @@ function Companies() {
         <Frame section="companies" source="./images/companies/company_7.png" alt="Company logo" />
         <Frame section="companies" source="./images/companies/company_8.png" alt="Company logo" />
       </div>
-      <Button content="Who We Work With" color="secondary" />
+      <Button content="Who We Work With" color="secondary" specification="mt_10" />
     </section>
   );
 }

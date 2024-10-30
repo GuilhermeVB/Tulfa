@@ -8,6 +8,9 @@
 @import './fontFace';
 @import './shared';
 
+@import './responsive/laptop';
+@import './responsive/mobile';
+
 @import '../components/button/Button.module';
 @import '../components/feature_grid/Feature.module';
 @import '../components/frame/Frame.module';
@@ -24,6 +27,7 @@
 @import '../layout/info/Info.module';
 @import '../layout/innovations/Innovations.module';
 @import '../layout/solutions/Solutions.module';
+
 
 body {
     background-color: $light-color;

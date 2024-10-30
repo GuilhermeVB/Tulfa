@@ -2,6 +2,8 @@
     display: flex;
     flex-flow: column;
     gap: .625rem;
+    width: fit-content;
+    height: fit-content;
 
     .immersive_frame_card {
         @include borderRadius(.6875rem);

@@ -1,0 +1,168 @@
+@media (min-width: 831px) and (max-width: 1150px) {
+
+    /* HEADER */
+
+    .header_container {
+        padding: 0 3.333125rem !important;
+    }
+
+    /* SOLUTIONS */
+
+    .solutions_container {
+        padding: 4.875rem 0 7rem !important;
+
+        .solutions_featureGrid {
+            gap: 3.625rem 1.875rem !important;
+        }
+    }
+
+    /* INNOVATIONS */
+
+    .highlights_container {
+        gap: 2.226875rem !important;
+        height: 17.8125rem !important;
+
+        &:nth-last-child(2n+1) .primary_button {
+            text-decoration: underline;
+        }
+
+        .highlights_description {
+            gap: .534375rem !important;
+            width: 21.28625rem !important;
+
+            .highlights_description_type {
+                @include unique-style(600, 8.55px !important, 10.64px !important);
+            }
+
+            .highlights_description_heading {
+                @include unique-style(600, 17.1px !important, 22.8px !important, $light-color, 1px !important);
+            }
+
+            .highlights_description_paragraph {
+                @include unique-style(300, 11.4px !important, 16.39px !important, $light-color, 0px !important);
+            }
+
+            .primary_button {
+                @include unique-style(500, 8.55px, 9.83px, $light-color);
+                @include borderRadius(.2225rem);
+                padding: .445625rem .890625rem;
+            }
+        }
+
+        .highlights_video,
+        .highlights_figure {
+            width: 22.265625rem !important;
+            height: 12.46875rem !important;
+        }
+    }
+
+    /* COMPANIES */
+
+    .companies_container {
+        height: 38.875rem;
+
+        .companies_heading {
+            text-align: center;
+            width: 57.75rem;
+        }
+    }
+
+    /* INFO */
+
+    .info_container {
+        gap: 2.22375rem !important;
+        padding: 4.4475rem 0 2.844375rem !important;
+
+        .info_titleField {
+            gap: .445rem !important;
+
+            .info_titleField_heading {
+                @include unique-style(600, 28.46px !important, 31.31px !important)
+            }
+
+            .info_titleField_paragraph {
+                @include unique-style(300, 11.39px !important, 16.37px !important)
+            }
+        }
+
+        .info_display {
+            gap: 1.334375rem !important;
+
+            .info_display_selection {
+                gap: .445rem !important;
+            }
+
+            .info_display_grid {
+                gap: .889375rem !important;
+                padding: 0 3rem;
+
+                .showcase_container {
+                    gap: .445rem;
+                    width: 16.23375rem;
+
+                    .showcase_frame_card {
+                        width: 16.23375rem;
+                        height: 11.11875rem;
+                    }
+
+                    .showcase_heading {
+                        @include unique-style(600, .800625rem, 1.023125rem, $light-color, 0.5px)
+                    }
+
+                    .showcase_paragraph {
+                        @include unique-style(300, .711875rem, 1.023125rem, $light-color, 0.5px)
+                    }
+                }
+            }
+        }
+
+
+        &>button {
+            @include borderRadius(.2225rem !important);
+            font-weight: 500 !important;
+            margin-top: .589375rem;
+        }
+
+        /* Info Buttons */
+
+        & button {
+            @include unique-style(600, 8.54px, 9.82px, $light-color);
+            @include borderRadius(.889375rem);
+        }
+    }
+
+    /* CASE STUDIES */
+
+    .caseStudies_container {
+        gap: .889375rem !important;
+        height: 19.8725rem !important;
+
+        .caseStudies_heading {
+            @include unique-style(600, 1.77875rem !important, 1.956875rem !important);
+        }
+
+        .caseStudies_carousel {
+            gap: .889375rem !important;
+
+            .caseStudies_frame_container {
+                gap: .445rem;
+
+                .caseStudies_frame_card {
+                    width: 16.23375rem;
+                    height: 9.02875rem;
+                }
+
+                .caseStudies_frame_description {
+                    @include unique-style(600, .800625rem, 1.023125rem, $light-color);
+                    width: 16.23375rem;
+                }
+            }
+        }
+    }
+
+    /* CONTACT */
+
+    .contact_container {
+        height: 31.25rem !important;
+    }
+}

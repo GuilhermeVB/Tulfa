@@ -57,7 +57,7 @@ function Info() {
           />
         </div>
       </div>
-      <Button content="Load More" color="secondary" />
+      <Button content="Load More" color="secondary" specification="pad_x_39 mt_16" />
     </section>
   );
 }

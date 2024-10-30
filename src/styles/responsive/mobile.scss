@@ -1,0 +1,226 @@
+@media (max-width: 830px) {
+    /* HEADER */
+
+    .header_container {
+        padding: 0 1.25rem !important;
+    }
+
+    /* BANNER */
+
+    .banner_span {
+        @include unique-style(300, 33.2px !important, 34.71px !important);
+        width: 20.231875rem !important;
+        bottom: 3.39625rem !important;
+        left: 3.206875rem !important;
+    }
+
+    /* CTA */
+
+    .cta_container {
+        height: 13.4375rem !important;
+
+        .cta_paragraph {
+            @include unique-style(500, 20px !important, 23px !important);
+            width: 24.0625rem !important;
+        }
+    }
+
+    .immersive_container {
+        gap: 5.4375rem !important;
+        padding: 6.25rem 0 !important;
+
+        .immersive_heading {
+            @include unique-style(600, 32px !important, 35.2px !important);
+            width: 24.0625rem !important;
+        }
+
+        .immersive_productdisplays {
+            gap: .8475rem !important;
+
+            .immersive_frame_card {
+                width: 21.6475rem !important;
+                height: 24.125rem !important;
+            }
+        }
+    }
+
+    /* SOLUTIONS */
+
+    .solutions_container {
+        gap: 1.875rem !important;
+        padding: 6.25rem 0 !important;
+
+        .solutions_titleField {
+            width: 24.0625rem;
+            align-self: center;
+
+            .solutions_titleField_heading {
+                @include unique-style(600, 32px !important, 50px !important)
+            }
+
+            .solutions_titleField_paragraph {
+                @include unique-style(500, 20px !important, 23px !important)
+            }
+        }
+
+        .solutions_featureGrid {
+            gap: 2rem !important;
+        }
+    }
+
+    /* HIGHLIGHTS */
+
+    .highlights_container {
+        gap: 2.22625rem !important;
+        flex-flow: column !important;
+        height: 28.516875rem !important;
+
+        &:nth-last-child(2n+1) .primary_button {
+            text-decoration: underline;
+        }
+
+        .highlights_description {
+            text-align: center;
+            gap: .534375rem !important;
+
+            .highlights_description_type {
+                @include unique-style(600, 8.55px !important, 10.64px !important);
+            }
+
+            .highlights_description_heading {
+                @include unique-style(600, 17.1px !important, 22.8px !important, $light-color, 1px !important);
+            }
+
+            .highlights_description_paragraph {
+                @include unique-style(300, 11.4px !important, 16.39px !important, $light-color, 0px !important);
+            }
+
+            .primary_button {
+                @include unique-style(500, 8.55px, 9.83px, $light-color);
+                @include borderRadius(.2225rem);
+                padding: .445625rem .890625rem;
+                align-self: center;
+            }
+        }
+
+        .highlights_video,
+        .highlights_figure {
+            width: 22.265625rem !important;
+            height: 12.46875rem !important;
+        }
+    }
+
+    /* COMPANIES */
+
+    .companies_container {
+        gap: 3.125rem !important;
+        height: 23.4375rem !important;
+
+        & button {
+            margin-top: 0 !important;
+        }
+
+        .companies_heading {
+            @include unique-style(600, 32px !important, 35.2px !important);
+            max-width: 24.0625rem;
+        }
+    }
+
+    /* INFO */
+
+    .info_container {
+        gap: 1.25rem !important;
+        padding: 3.125rem 0 2.235625rem !important;
+
+        .info_titleField {
+            gap: .445rem !important;
+            max-width: 24.0625rem;
+
+            .info_titleField_heading {
+                @include unique-style(600, 28.46px !important, 31.31px !important)
+            }
+
+            .info_titleField_paragraph {
+                @include unique-style(300, 11.39px !important, 16.37px !important);
+                text-align: center;
+            }
+        }
+
+        .info_display {
+            gap: 1.334375rem !important;
+
+            .info_display_selection {
+                flex-wrap: wrap;
+                gap: .445rem !important;
+                padding: 0 1.25rem;
+            }
+
+            .info_display_grid {
+                gap: .889375rem !important;
+                padding: 0 3rem;
+
+                .showcase_container {
+                    gap: .445rem;
+                    width: 16.23375rem;
+
+                    .showcase_frame_card {
+                        width: 16.23375rem;
+                        height: 11.11875rem;
+                    }
+
+                    .showcase_heading {
+                        @include unique-style(600, .800625rem, 1.023125rem, $light-color, 0.5px)
+                    }
+
+                    .showcase_paragraph {
+                        @include unique-style(300, .711875rem, 1.023125rem, $light-color, 0.5px)
+                    }
+                }
+            }
+        }
+
+
+        &>button {
+            @include borderRadius(.2225rem !important);
+            font-weight: 500 !important;
+            margin-top: 1.105625rem;
+        }
+
+        /* Info Buttons */
+
+        & button {
+            @include unique-style(600, 8.54px, 9.82px, $light-color);
+            @include borderRadius(.889375rem);
+            padding: 0.445rem .889375rem;
+        }
+    }
+
+    /* CASE STUDIES */
+
+    .caseStudies_container {
+        gap: .889375rem !important;
+        height: 19.8725rem !important;
+
+        .caseStudies_heading {
+            @include unique-style(600, 1.77875rem !important, 1.956875rem !important);
+        }
+
+        .caseStudies_carousel {
+            gap: .889375rem !important;
+
+            .caseStudies_frame_container {
+                gap: .445rem;
+
+                .caseStudies_frame_card {
+                    width: 16.23375rem;
+                    height: 9.02875rem;
+                }
+
+                .caseStudies_frame_description {
+                    @include unique-style(600, .800625rem, 1.023125rem, $light-color);
+                    width: 16.23375rem;
+                }
+            }
+        }
+    }
+}
