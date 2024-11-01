@@ -13,10 +13,20 @@
 
 .primary_button {
     background-color: $primary-button-color;
+    transition: background-color .5s ease;
+
+    &:hover {
+        background-color: $primary-button-hover;
+    }
 }
 
 .secondary_button {
     background-color: $secondary-button-color;
+    transition: background-color .5s ease;
+
+    &:hover {
+        background-color: $secondary-button-hover;
+    }
 }
 
 .showcase_button {

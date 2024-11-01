@@ -1,0 +1,125 @@
+.menu_container {
+    z-index: 2;
+    background-color: $light-color;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+
+    .menu_left {
+        flex: 68%;
+        padding: 2.21rem 0;
+        padding-left: 5.521875rem;
+
+        .menu_left_apresentation {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            gap: 4.375rem;
+            align-self: center;
+            height: 95%;
+
+            .menu_left_apresentation_heading {
+                color: $menu-color;
+                font-weight: 600;
+                font-size: 73.09px;
+                line-height: 87.22px;
+            }
+
+            &>button {
+                font-size: 17.03px;
+                line-height: 20.33px;
+                padding: 19.25px 19.96px;
+            }
+        }
+    }
+
+    .menu_line {
+        position: absolute;
+        top: 0;
+        right: 34.5%;
+        background: linear-gradient(270deg, rgba(190, 185, 185, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        width: 6px;
+        height: 100%;
+    }
+
+    .menu_right {
+        flex: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        margin-right: 4.91375rem;
+        padding: 2.21rem 0;
+
+        .menu_right_close {
+
+            & img:hover {
+                cursor: pointer;
+            }
+        }
+
+
+        .menu_right_list {
+            @include unique-style(600, 44.06px, 52.58px, $tertiary-color);
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            gap: 1.3rem;
+            list-style: none;
+
+            & li {
+                cursor: pointer;
+                transition: color .5s ease;
+
+                &:hover {
+                    color: $menu-color;
+                }
+            }
+        }
+
+        .menu_right_footer {
+            @include unique-style(700, 13.22px, 15.77px);
+            @include upperCase();
+            display: flex;
+            gap: 3.125rem;
+
+            & span {
+                cursor: pointer;
+                transition: color .5s ease;
+
+                &:hover {
+                    color: $menu-color;
+                }
+            }
+        }
+    }
+}
+
+/* ELEMENTS */
+
+.menu_left_background {
+    background-color: $menu-color;
+    background-image: url("../../../public/images/menu/background_menu_actived.png");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    .menu_frame_container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .marker {
+        position: relative;
+        top: 5%;
+        text-align: center;
+        @include unique-style(600, 20px, 20px, $light-color);
+    }
+}

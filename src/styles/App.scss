@@ -10,11 +10,15 @@
 
 @import './responsive/laptop';
 @import './responsive/mobile';
+@import './responsive/TransitionAdjustments';
+
+@import '../animations/Animations';
 
 @import '../components/button/Button.module';
 @import '../components/feature_grid/Feature.module';
 @import '../components/frame/Frame.module';
 @import '../components/highlights/Highlights.module';
+@import '../components/menu/Menu.module';
 @import '../components/show_case/ShowCase.module';
 
 @import '../layout/banner/Banner.module';
@@ -31,4 +35,10 @@
 
 body {
     background-color: $light-color;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.body_scroll_deactivated {
+    overflow-y: hidden;
 }

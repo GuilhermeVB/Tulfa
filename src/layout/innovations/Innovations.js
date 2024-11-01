@@ -5,6 +5,7 @@ function Innovations() {
   return (
     <section className="innovations_container">
       <Highlights
+        order={"1"}
         type="Metaverse Content Production"
         heading="InStore Immersive Activation"
         paragraph="Tulfa’s AR feature was tailor-made to suit both the venue and the audience. 
@@ -13,6 +14,7 @@ function Innovations() {
         videoUrl="./videos/innovations_visual_element_1.mp4"
       />
       <Highlights
+        order={"2"}
         type="3D Model Creation"
         heading="High-quality Product Renders"
         paragraph="The future of digital experiences is here. Tulfa's 3D Lab provides you with an instant metaverse
@@ -21,6 +23,7 @@ function Innovations() {
         videoUrl="./videos/innovations_visual_element_2.mp4"
       />
       <Highlights
+        order={"3"}
         type="3D Model Creation"
         heading="3D Product Configuration"
         paragraph="It enables for product customization in terms of colors, materials, textures, sizes, pricing, and other factors. 
@@ -29,6 +32,7 @@ function Innovations() {
         imageUrl="./images/innovations/innovations_visual_element_3.png"
       />
       <Highlights
+        order={"4"}
         type="Product Content"
         heading="Enhanced Content that Converts"
         paragraph="We enhance your product listings and create digital experiences that transform your digital shelf. 

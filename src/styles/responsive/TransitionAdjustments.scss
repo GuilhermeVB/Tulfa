@@ -1,0 +1,30 @@
+@media (max-width: 629px) {
+    .info_display_grid {
+
+        &>*:nth-last-child(2) p,
+        &>*:nth-last-child(3) p {
+            @include webkitUndoTansparentText($light-color !important)
+        }
+    }
+}
+
+@media (min-width: 630px) and (max-width: 903px) {
+    .info_display_grid {
+        &>*:nth-last-child(3) p {
+            @include webkitUndoTansparentText($light-color !important)
+        }
+    }
+}
+
+@media (min-width: 1520px) {
+    .info_display_grid {
+        max-width: 1519px;
+    }
+}
+
+@media (min-width: 1804px) {
+    .solutions_featureGrid {
+        align-self: center;
+        max-width: 1803px;
+    }
+}

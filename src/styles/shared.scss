@@ -6,8 +6,12 @@ $light-color: #ffffff;
 $dark-color: #0A0A37;
 
 $primary-button-color: #FF4729;
+$primary-button-hover: #a32f1d;
 $secondary-button-color: #736DF9;
+$secondary-button-hover: #4a459c;
 $secondary-button-off-color: #30288F;
+
+$menu-color: #6358E7;
 
 $primary-gradient-color: linear-gradient(90deg, rgba(169, 164, 243, 1) 0%, rgba(251, 251, 248, 1) 100%);
 $secondary-gradient-color: linear-gradient(270deg, rgba(162, 154, 255, 1) 0%, rgba(255, 198, 189, 1) 100%);
@@ -25,6 +29,12 @@ $tertiary-gradient-color: linear-gradient(270deg, rgba(83, 69, 255, 1) 0%, rgba(
     background: $color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@mixin webkitUndoTansparentText($color) {
+    background: none;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: $color;
 }
 
 @mixin upperCase() {

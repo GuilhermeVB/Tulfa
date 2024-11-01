@@ -1,0 +1,15 @@
+.menu_container {
+    display: none;
+    transform: translateX(100%);
+}
+
+.immersive_animation_container,
+.innovations_container,
+.info_container,
+.caseStudies_carousel {
+    overflow-x: hidden;
+}
+
+.companies_animation_container {
+    background-color: $tertiary-color;
+}
